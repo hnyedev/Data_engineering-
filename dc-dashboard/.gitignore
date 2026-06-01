@@ -1,0 +1,79 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# =========================
+# Environment variables / secrets
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# Logs & temp files
+# =========================
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# =========================
+# Jupyter (if you ever use it)
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+
+# =========================
+# Terraform (CRITICAL)
+# =========================
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Sensitive Terraform variables
+terraform.tfvars
+*.tfvars
+
+# Lock file (optional: keep if you want reproducibility)
+# .terraform.lock.hcl
+
+# =========================
+# Docker
+# =========================
+*.tar
+
+# =========================
+# IDEs / Editors
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS files
+# =========================
+Thumbs.db
+
+# =========================
+# Data (optional – depends on your use case)
+# =========================
+# If your /data folder contains large or generated files:
+data/*
+!data/.gitkeepinfra/.terraform.lock.hcl
+infra/.terraform/
+infra/terraform.tfstate
+infra/terraform.tfstate.backup
