@@ -148,33 +148,6 @@ Pipelines/
 ```
 
 ---
-
-## Running the Projects
-
-### Airflow Stack
-```bash
-docker-compose up --build
-# UI: http://localhost:8080  |  user: airflow  |  pass: airflow
-```
-
-### Metabase + PostgreSQL
-```bash
-cp Metabase/.env.example Metabase/.env
-# Edit .env with your credentials
-cd Metabase && docker-compose up -d
-# Metabase: http://localhost:3000
-```
-
-### DC Dashboard (local)
-```bash
-cd dc-dashboard
-pip install -r requirements.txt
-streamlit run app.py
-```
-
-### YouTube Scraper
-```bash
-cd "Youtube scraping"
 echo "API_KEY=your_youtube_api_key" > .env
 python scrape_youtube.py
 ```
