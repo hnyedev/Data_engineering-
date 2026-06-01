@@ -147,7 +147,4 @@ Pipelines/
 └── Dockerfile               # Custom Airflow image
 ```
 
----
-echo "API_KEY=your_youtube_api_key" > .env
-python scrape_youtube.py
-```
+
